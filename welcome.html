@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display All Query Parameters</title>
+</head>
+<body>
+    <h1>Datos recibidos</h1>
+    <ul id="output"></ul>
+
+    <script>
+        // Get the URL's query string
+        const queryString = window.location.search;
+
+        // Parse the query string
+        const urlParams = new URLSearchParams(queryString);
+
+        // Get the output element where we'll display the parameters
+        const outputElement = document.getElementById('output');
+
+        // Loop over each parameter and display it
+        urlParams.forEach((value, key) => {
+            // Create a list item for each parameter
+            const listItem = document.createElement('li');
+            listItem.textContent = `${key}: ${value}`;
+            outputElement.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>

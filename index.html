@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de Registro - Super Cool Platform</h1>
+
+    <form action="welcome.html" enctype="multipart/form-data">
+        <div>
+            <label for="username1">Username:</label>
+            <input type="text" name="username" id="username1" required>
+        </div>
+        <div>
+            <label>
+                Password:
+                <input name="password" type="password" required>
+            </label>
+        </div>
+        <div>
+            <label for="fname1">First Name</label>
+            <input type="text" name="fname" id="fname1">
+        </div>
+        <div>
+            <label for="lname1">Last Name</label>
+            <input type="text" name="lname" id="lname1">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input class="long-input-text" type="email" name="email" id="email" required placeholder="Please introduce your email">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" value="1" min="0" max="150" name="age" id="age">
+        </div>
+        <div>
+            <label for="avatar">Avatar</label>
+            <input type="file" name="avatar" id="avatar">
+        </div>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar el formulario</button>
+    </form>
+</body>
+</html>
